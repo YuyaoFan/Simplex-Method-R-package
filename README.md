@@ -16,3 +16,12 @@ There are five functions in this package, which are described in the function he
 - **LPsimplex_parallel**: This function is used to solve linear programming problems using the simplex table method after parallelization, and is used when dealing with large-scale problems, and is not suitable for small-scale problems, because the proportion of time spent on assigning tasks in small tasks is too large (or even hundreds of times) to the total solution time, so it is not recommended
 
 ![smrpg](https://github.com/user-attachments/assets/626d073c-599e-4665-a8b8-1e849a0b0255)
+
+There are still some unresolved issues in this R package build, such as:
+
+- When solving large-scale linear optimization problems,the parallelized solution is prone to produce missing values,resulting in poor solution results.
+- Storage takes too long when processing sparse matrices
+- Parallelization version compatibility issues
+- Parallelizing the issue of repeatedly calling the same parameters, i.e. the warning issue in the experiment above
+
+In the future, we can focus on further updating the R package in solving large-scale linear optimization problems. In addition to using parallelization methods, it is also possible to consider adding dual simplex methods, multi-objective optimization, and other refinement directions.
