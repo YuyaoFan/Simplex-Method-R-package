@@ -1,0 +1,16 @@
+Package: SimplexMethod
+Type: Package
+Title: SimplexMethod: Solving Linear Programming Problems with the Simplex Method
+Version: 0.1.2
+Author: Yuyao Fan
+Maintainer: Yuyao Fan <fanyuyao0322@gmail.com>
+Description:The SimplexMethod package provides an efficient implementation of the Simplex Algorithm for solving linear programming (LP) problems. It supports both maximization and minimization of objective functions and allows users to visualize the intermediate steps of the algorithm through detailed simplex table outputs. The package is designed to handle small to medium-sized LP problems and includes optional parallelization for improved performance on larger problems.
+License: Shanghai Jiao Tong University
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports:
+    parallel,
+    foreach,
+    doParallel,
+    snow
